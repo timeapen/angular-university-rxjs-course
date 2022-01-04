@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Course} from "../model/course";
-import {interval, noop, Observable, of, timer} from 'rxjs';
-import {catchError, delayWhen, map, retryWhen, shareReplay, tap} from 'rxjs/operators';
+import {Observable} from 'rxjs';
+import {map, shareReplay, tap} from 'rxjs/operators';
 import { createHttpObservable } from '../common/util';
 
 @Component({
